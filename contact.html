@@ -4,32 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <nav>
-        <div>
-            <a href=""><img src="" alt="">AfriConnect Summit 2026</a>
-            <button>
-                <span></span>
-            </button>
-            <div>
-                <ul>
+    <header>
+    <nav class="navbar">
+            <a href="index.html" class="logo-box">
+                <img src="" alt="logo"><span>AfriConnect Summit 2026</span>
+            </a>
+                <ul class="nav-links">
                     <li><a href="index.html">Acceuil</a></li>
                     <li><a href="programme.html">Programme</a></li>
                     <li><a href="intervenants.html">Intervenant</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <button><a href="">Rejoignez-nous</a></button>
-            </div>
-        </div>
+                <a href="contact.html" class="btn-nav">Rejoignez-nous</a>
     </nav>
-    <section>
+    </header>
+    <section class="hero-interne">
         <h1>Inscription & Contact</h1>
         <p><a href="index.html">Acceuil</a>Contact</p>
     </section>
-    <section>
-        <div>
-            <form>
+    <section class="contact">
+        <div class="formulaire">
+            <form id="contactForm">
                 <label for="">Nom complet</label>
                 <input type="text" id="nom" required>
                 <small class="error"></small>
@@ -52,7 +51,7 @@
             </form>
         </div>
     </section>
-    <section>
+    <section class="faq">
         <h2>Questions fréquentes</h2>
         <details>
             <summary>Comment s'inscrire ?</summary>
@@ -82,30 +81,30 @@
         </iframe>
     </section>
     <section>
-        <footer>
-        <div>
+        <footer class="footer">
+        <div class="footer-container">
             <!--Colonne 1-->
-            <div>
+            <div class="footer-col">
                 <h3>Conférence Tech 2026</h3>
                 <p>Le plus grand événement dédié aux technologies et à l'innovation en Afrique. </p>
             </div>
             <!--Colonne 2-->
-            <div>
+            <div class="footer-col">
                 <h3>Liens rapides</h3>
                 <ul>
                     <li><a href="index.html">Acceuil</a></li>
                     <li><a href="intervenants.html">Intervenants</a></li>
-                    <li><a href="#">Programme</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="programme.html">Programme</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <!--Colonne 3-->
-            <div>
+            <div class="footer-col">
                 <h3>Suivez-nous</h3>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-watchapp"></i></a>
-                <a href="#"><i class="fab fa-Télégram"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-telegram"></i></a>
             </div>
         </div>
         <hr>

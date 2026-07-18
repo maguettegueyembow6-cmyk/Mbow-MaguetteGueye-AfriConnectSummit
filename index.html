@@ -4,34 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceuil</title>
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <nav>
-        <div>
-            <a href=""><img src="" alt="">AfriConnect Summit 2026</a>
-            <button>
-                <span></span>
-            </button>
-            <div>
-                <ul>
-                    <li><a href="index.html">Acceuil</a></li>
+    <header>
+    <nav class="navbar">
+            <a href="index.html" class="logo-box">
+                <img src="" alt="logo" class="logo"><span>AfriConnect Summit 2026</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Acceuil</a></li>
                     <li><a href="programme.html">Programme</a></li>
                     <li><a href="intervenants.html">Intervenant</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <button><a href="">Rejoignez-nous</a></button>
-            </div>
-        </div>
+                <a href="contact.html" class="btn-nav">Rejoignez-nous</a>
     </nav>
-    <section>
-        <div>
+    </header>
+    <section class="hero"> 
+        <div class="hero-content">
             <h1>Conférence Tech Sénégal 2026</h1>
             <p> Dakar, Sénégal | 15 Décembre 2026</p>
             <div>
-                <a href="#">Réserver</a>
-                <a href="#">En savoir</a>
+                <a href="#" class="btn">Réserver</a>
+                <a href="#" class="btn btn2">En savoir</a>
             </div>
-            <div>
+            <div id="countdown">
                 <div><span id="days">00</span><p>Jours</p></div>
                 <div><span id="hours">00</span><p>Heures</p></div>
                 <div><span id="minute">00</span><p>Minutes</p></div>
@@ -39,122 +37,122 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="stats">
         <h2>Chiffres Clés</h2>
-        <div>
-            <div>
-                <h3>0</h3>
+        <div class="stats-container">
+            <div class="stat">
+                <h3 class="counter" data-target="1200">0</h3>
                 <p>Participants</p>
             </div>
-            <div>
-                <h3>0</h3>
+            <div class="stat">
+                <h3 class="counter" data-target="48">0</h3>
                 <p>Intervenants</p>
             </div>
-            <div>
-                <h3>0</h3>
+            <div class="stat">
+                <h3 class="counter" data-target="3">0</h3>
                 <p>Jours</p>
             </div>
-            <div>
-                <h3>0</h3>
+            <div class="stat">
+                <h3 class="counter" data-target="12">0</h3>
                 <p>Pays représentés</p>
             </div>
         </div>
     </section>
-    <section>
+    <section class="why">
         <h2>Pourquoi participer ?</h2>
-        <div>
-            <div>
-                <i></i>
+        <div class="why-container">
+            <div class="card">
+                <i class="bi bi-award-fill"></i>
                 <h3>Conférences</h3>
                 <p>Découvrez les derniéres tendances du numerique avec des experts.</p>
             </div>
-            <div>
-                <i></i>
-                <h3>Networking</h3>
+            <div class="card">
+                <i class="bi bi-people-fill"></i>
+                <h3>Constitution de réseau</h3>
                 <p>Rencontrez des professionnels et développez votre réseau.</p>
             </div>
-            <div>
-                <i></i>
-                <h3>Innotion</h3>
+            <div class="card">
+                <i class="bi bi-lightbulb-fill"></i>
+                <h3>Innovation</h3>
                 <p>Explorez des solutions innovantes et des projets inspirants.</p>
             </div>
         </div>
     </section>
-    <section>
+    <section class="speakers">
         <h2>Intervenants Vedettes</h2>
-        <div>
-            <div>
-                <img src="" alt="">
+        <div class="speaker-container">
+            <div class="speaker-card">
+                <img src="" alt="Intervenant 1">
                 <h3>Marame Fall</h3>
                 <p>Experte en Intelligence Artificielle</p>
                 <span>France</span><br></br>
-                <a href="intervenants.html">Voir plus</a>
+                <a href="intervenants.html" class="btn">Voir plus</a>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="speaker-card">
+                <img src="" alt="Intervenant 2">
                 <h3>Aida Niang</h3>
                 <p>Développeuse Full Stack</p>
                 <span>Etats-Unis</span><br></br>
-                <a href="intervenants.html">Voir plus</a>
+                <a href="intervenants.html" class="btn">Voir plus</a>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="speaker-card">
+                <img src="" alt="Intervenant3">
                 <h3>Nafi Kâ</h3>
                 <p>Experte en Cybersécurité</p>
                 <span>Italie</span><br></br>
-                <a href="intervenants.html">Voir plus</a>
+                <a href="intervenants.html" class="btn">Voir plus</a>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="speaker-card">
+                <img src="" alt="Intervenant 4">
                 <h3>Mouhamed Fall</h3>
                 <p>Consultant Cloud</p>
                 <span>Canada</span><br></br>
-                <a href="intervenants.html">Voir plus</a>
+                <a href="intervenants.html" class="btn">Voir plus</a>
             </div>
         </div>
     </section>
-    <section>
+    <section class="Sponsor">
         <h2>Nos Sponsors</h2>
-        <div>
-            <div>
-                <h3>Sponsor Or</h3>
+        <div class="Sponsor-container">
+            <div class="Sponsor gold">
+                <h3 class="bi bi-star-fill tex-warning">Sponsor Or</h3>
                 <p>Tech Africa</p>
             </div>
-            <div>
-                <h3>Sponsor Argent</h3>
+            <div class="Sponsor silver">
+                <h3 class="bi bi-star-fill tex-warning">Sponsor Argent</h3>
                 <p>Digital World</p>
             </div>
-            <div>
-                <h3>Sponsor Bronze</h3>
+            <div class="Sponsor Bronze">
+                <h3 class="bi bi-star-fill tex-warning">Sponsor Bronze</h3>
                 <p>Startup Hub</p>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div>
+    <footer class="footer">
+        <div class="footer-container">
             <!--Colonne 1-->
-            <div>
+            <div class="footer-col">
                 <h3>Conférence Tech 2026</h3>
                 <p>Le plus grand événement dédié aux technologies et à l'innovation en Afrique. </p>
             </div>
             <!--Colonne 2-->
-            <div>
+            <div class="footer-col">
                 <h3>Liens rapides</h3>
                 <ul>
                     <li><a href="index.html">Acceuil</a></li>
                     <li><a href="intervenants.html">Intervenants</a></li>
-                    <li><a href="#">Programme</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="programme.html">Programme</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <!--Colonne 3-->
-            <div>
+            <div class="footer-col">
                 <h3>Suivez-nous</h3>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-watchapp"></i></a>
-                <a href="#"><i class="fab fa-Télégram"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-telegram"></i></a>
             </div>
         </div>
         <hr>

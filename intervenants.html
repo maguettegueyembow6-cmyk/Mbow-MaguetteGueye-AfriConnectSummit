@@ -4,58 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intervenants</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <nav>
-        <div>
-            <a href=""><img src="" alt="">AfriConnect Summit 2026</a>
-            <button>
-                <span></span>
-            </button>
-            <div>
-                <ul>
+    <header>
+    <nav class="navbar">
+            <a href="index.html" class="logo-box">
+                <img src="" alt="logo" class="logo"><span>AfriConnect Summit 2026</span>
+            </a>
+                <ul class="nav-links">
                     <li><a href="index.html">Acceuil</a></li>
                     <li><a href="programme.html">Programme</a></li>
                     <li><a href="intervenants.html">Intervenant</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <button><a href="">Rejoignez-nous</a></button>
-            </div>
-        </div>
+                <a href="contact.html" class="btn-nav">Rejoignez-nous</a>
     </nav>
-    <section>
+    </header>
+    <section class="hero-interne">
         <h1>Nos Intervenants</h1>
-        <p><a href="index.html">Acceuil</a>Intervenants</p>
+        <p><a href="index.html"></a>Intervenants</p>
     </section>
     <section>
-        <button>Tous</button>
-        <button>IA & Tech</button>
-        <button>Business</button>
-        <button>Design</button>
-        <button>Data</button>
+        <button class="filter-btn active" onclick="filterSelection('all')">Tous</button>
+        <button class="filter-btn" onclick="filterSelection('ia')">IA & Tech</button>
+        <button class="filter-btn" onclick="filterSelection('business')">Business</button>
+        <button class="filter-btn" onclick="filterSelection('design')">Design</button>
+        <button class="filter-btn" onclick="filterSelection('data')">Data</button>
     </section>
-    <section>
-        <div>
+    <section class="speakers-grid">
+        <div class="speaker-card ia">
             <img src="" alt="">
-            <h3>Demba Sow</h3>
+            <h3 >Demba Sow</h3>
             <p>IA & Machine Learning</p>
             <span>Sénégal</span>
         </div>
-        <div>
+        <div class="speaker-card business">
             <img src="" alt="">
             <h3>Mouhamed Thiam</h3>
             <p>Business</p>
             <span>France</span>
         </div>
-        <div>
+        <div class="speaker-card design">
             <img src="" alt="">
             <h3>Khadim Mbow</h3>
             <p>UX/UI Design</p>
             <span>Maroc</span>
         </div>
     </section>
-    <footer>
-        <div>
+    <footer class="footer">
+        <div class="footer-container">
             <!--Colonne 1-->
             <div>
                 <h3>Conférence Tech 2026</h3>
@@ -67,17 +66,17 @@
                 <ul>
                     <li><a href="index.html">Acceuil</a></li>
                     <li><a href="intervenants.html">Intervenants</a></li>
-                    <li><a href="#">Programme</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="programme.html">Programme</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <!--Colonne 3-->
             <div>
                 <h3>Suivez-nous</h3>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-watchapp"></i></a>
-                <a href="#"><i class="fab fa-Télégram"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-telegram"></i></a>
             </div>
         </div>
         <hr>

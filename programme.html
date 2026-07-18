@@ -4,34 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programme</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <nav>
-        <div>
-            <a href=""><img src="" alt="">AfriConnect Summit 2026</a>
-            <button>
-                <span></span>
-            </button>
-            <div>
-                <ul>
+    <header>
+    <nav class="navbar">
+            <a href="index.html" class="logo-box">
+                <img src="" alt="logo" class="logo"><span>AfriConnect Summit 2026</span>
+            </a>
+                <ul class="nav-links">
                     <li><a href="index.html">Acceuil</a></li>
                     <li><a href="programme.html">Programme</a></li>
                     <li><a href="intervenants.html">Intervenant</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <button><a href="">Rejoignez-nous</a></button>
-            </div>
-        </div>
+                <a href="contact.html" class="btn-nav">Rejoignez-nous</a>
     </nav>
-    <section>
+    </header>
+    <section class="programme">
         <h2>Programme</h2>
-        <div>
-            <button>Jour 1</button>
-            <button>Jour 2</button>
-            <button>Jour 3</button>
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showDay('jour1')">Jour 1</button>
+            <button class="tab-btn" onclick="showDay('jour2')">Jour 2</button>
+            <button class="tab-btn" onclick="showDay('jour3')">Jour 3</button>
         </div>
         <!--Jour 1-->
-        <div>
+        <div id="jour1" class="tab-content">
             <table>
                 <tr>
                     <th>Heure</th>
@@ -47,25 +46,59 @@
             </table>
         </div>
     </section>
-    <section>
+    <section class="theme">
         <h2>Thématiques</h2>
-        <div>
-            <div>
-                <h3>Intelligence Artificielle</h3>
+        <div class="theme-grid">
+            <div class="theme-card">
+                <h3>🤖Intelligence Artificielle</h3>
                 <p>Découvrez les dernieres innovations en IA.</p>
             </div>
-            <div>
-                <h3>Cybersécurité</h3>
+            <div class="theme-card">
+                <h3>🔒Cybersécurité</h3>
                 <p>Protéger les données et les systemes informatique.</p>
             </div>
-            <div>
-                <h3>Cloud Computing</h3>
+            <div class="theme-card">
+                <h3>☁️Cloud Computing</h3>
                 <p>Les solutions Cloud pour les entreprises modernes.</p>
             </div>
-            <div>
-                <h3>Data Science</h3>
+            <div class="theme-card">
+                <h3>📊Data Science</h3>
                 Analyse et valorisation des données.
             </div>
         </div>
     </section>
-    
+     <footer class="footer">
+        <div class="footer-container">
+            <!--Colonne 1-->
+            <div class="footer-col">
+                <h3>Conférence Tech 2026</h3>
+                <p>Le plus grand événement dédié aux technologies et à l'innovation en Afrique. </p>
+            </div>
+            <!--Colonne 2-->
+            <div class="footer-col">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="intervenants.html">Intervenants</a></li>
+                    <li><a href="programme.html">Programme</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--Colonne 3-->
+            <div class="footer-col">
+                <h3>Suivez-nous</h3>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-telegram"></i></a>
+            </div>
+        </div>
+        <hr>
+        <p>
+            &copy; <span id="year"></span> Conférence Tech 2026 - Tous droits réservés.
+        </p>
+        <!--Bouton retour en haut-->
+        <button id="topBtn" onclick="topFunction()">↑</button>
+    </footer>
+</body>
+</html>    
