@@ -1,4 +1,65 @@
 
+/*=============NAVBAR==============*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+header{
+    width: 100%;
+    background: #1c29e0;
+    padding: 15px 8%;
+    position: fixed;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-box{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links a:hover{
+    color:#ffc107;
+}
+.active{
+    color: #ffc107;
+}
+.btn-nav{
+    background: #ffc107;
+    color: black;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.btn-nav:hover{
+    background: white;
+}
 /*=============== Style général===========*/
 *{
     margin: 0;
@@ -23,6 +84,7 @@ img{
 }
 /*================ HERO =============*/
 .hero{
+    height: auto;
     height: 100vh;
     background:linear-gradient(rgba(0,0,0,.6)),url("../i");
     background-size: cover;
@@ -32,16 +94,18 @@ img{
     align-items: center;
     text-align: center;
     color: white;
+    background-image: url(../images/aceuil.jpeg);
 }
 .hero-content{
     animation: fadeIn 1.5s ease;
 }
 .hero h1{
-    font-size:20px;
+    font-size:60px;
 }
 .hero p{
-    font-size: 20px;
+    font-size: 10px;
     margin: 20px 0;
+    margin-top: -10px;
 }
 .buttons{
     margin: 25px 0;
@@ -113,62 +177,113 @@ img{
     transform: translateY(-10px);
 }
 /*============= INTERVENANT =============*/
-peakers-container{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 20px;
-}
-peaker-card{
-    background: white;
+.speaker{
+    padding: 60px 8%;
+    background: #f5f5f5;
     text-align: center;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 10px rgba(0,0,0,.15);
+}
+.speaker h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.speaker-container{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.speaker-card{
+    width: 260px;
+    background: #fff;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
     transition: .3s;
 }
-peaker-card img{
-    width: 100%;
-    height: 250px;
+.speaker-card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
     object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
 }
-peaker-card:hover{
+.speaker-card:hover{
     transform: translateY(-10px);
 }
 .speaker-card .btn{
     margin-bottom: 20px;
 }
+.speaker-card h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.speaker-card p{
+    color: #666;
+    margin-bottom: 10px;
+}
+.speaker-card span{
+    color: #666;
+    margin-bottom: 10px;
+}
+.btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #0d6efd;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: .3s;
+}
 
 /*============ SPONSORS ==================*/
-.sponsors-container{
+.sponsor{
+    padding: 60px 8%;
+    background: #f8f9fa;
+    text-align: center;
+}
+.sponsor h2{
+    font-size: 35px;
+    color: #0d47a1;
+    margin-bottom: 40px;
+}
+.sponsor-container{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
-}
-.sponsor{
-    padding: 30px;
-    border-radius: 10px;
     text-align: center;
-    color:white
 }
+/*Cartes*/
+.sponsor{
+    width: 260px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px rgba(0,0,0,.15);
+    transition: .3s;
+}
+.sponsor:hover{
+    transform: translateY();
+}
+/*titre*/
+.sponsor h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/*couleur*/
 .gold{
-    background: gold;
-    color: black;
-    width: 220px;
+    border-top: 6px solid rgb(236, 175, 21);
 }
 .silver{
-    background: silver;
-    color: black;
-    width: 260px;
+    border-top: 6px solid silver;
 }
-.silver{
-    background: silver;
-    color: black;
-    width: 260px;
-}
-.bronze{
-    background: #cd7f32;
-    width: 220px;
+.Bronze{
+    border-top: 6px solid #614812;
 }
 /*============ FOOTER ================*/
 .footer{
@@ -189,14 +304,17 @@ peaker-card:hover{
 }
 .footer-col ul{
     list-style: none;
+    color: #0d6efd;
 }
 
 .footer-col ul li{
     margin: 10 0;
+    color: #ddd;
 }
 .footer-col i{
     font-size: 25px;
     margin-right: 15px;
+    color: #0d6efd;
 }
 .copyright{
     text-align: center;
@@ -213,6 +331,14 @@ peaker-card:hover{
     border-radius: 50%;
     cursor: pointer;
     display: none;
+}
+footer img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+.mmm{
+    text-align: center;
 }
 /*=============Animation=================*/
 @keyframes fadeIn{
@@ -243,7 +369,7 @@ body{
     background: linear-gradient(0,0,0,.6);
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: #4d2ed6;
     text-align: center;
     padding: 100px 20px;
 }
@@ -264,7 +390,7 @@ body{
 
 /* SECTION */
 section{
-    padding: 60px 10%;
+    padding: 0px 12%;
 }
 
 h2{
@@ -276,6 +402,7 @@ h2{
 /* Programme */
 
 .tabs{
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -345,7 +472,7 @@ table tr:nth-child(even){
 }
 
 .filter button{
-    padding: 12px 20px;
+    padding: 14px 22px;
     margin: 5px;
     border: none;
     background: #ddd;
