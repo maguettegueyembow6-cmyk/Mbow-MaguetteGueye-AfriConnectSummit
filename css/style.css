@@ -696,3 +696,125 @@ form button{
         width: 100%;
     }
 }
+
+body.dark{
+    background: #121212;
+    color: white;
+}
+body.dark header{
+    background: #000;
+}
+body.dark.card{
+    background: #222;
+    color: white;
+} 
+header{
+    position: fixed;
+    width: 100%;
+    transition: .4s;
+}
+header.scrolled{
+    background: #0d6efd;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    padding: 10px 8%;
+}
+
+/*====================mode sombre===========*/
+body.dark{
+    background-color: #121212;
+    color: white;
+}
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6{
+    color: white !important;
+}
+body.dark p,
+body.dark li,
+body.dark span{
+    color: #e0e0e0 !important;
+}
+body.dark .speaker-card{
+    background: #222;
+}
+body.dark .speaker-card h3{
+    color: white;
+}
+body.dark .speaker-card p{
+    color: white;
+}
+body.dark .speaker-card span{
+    color: #ccc;
+}
+body.dark .speaker-card .btn{
+    background: #0d6efd;
+    color: white;
+}
+body.dark .card i{
+    color: black !important;
+}
+body.dark .card h3{
+    color: #000 !important;
+}
+body.dark .card p{
+    color: #000 !important;
+}
+body.dark .speaker{
+    background: #121212;
+}
+body.dark .speaker-container{
+    background: transparent;
+}
+body.dark .speaker-card{
+    background: #222;
+    color: white;
+}
+body.dark .countdown p{
+    color: #000 !important;
+}
+body.dark .countdown{
+    color: #000 !important;
+}
+body.dark .theme-card h3,
+body.dark .theme-card p{
+    color:black !important
+}
+body.dark table{
+    background: #222;
+}
+body.dark table th{
+    background: #0d6efd;
+    color: white;
+}
+body.dark table td{
+    color: white;
+    border-color: #444;
+}
+body.dark table tr:nth-child(even){
+    background: #2c2c2c;
+}
+body.dark .contact{
+    background: #121212;
+}
+body.dark .formulaire,
+body.dark .infos{
+    background: #222;
+    color: white;
+}
+body.dark input,
+body.dark select,
+body.dark textarea{
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+}
+body.dark input::placeholder,
+body.dark textarea::placeholder{
+    color:#ccc;
+}
+body.dark .formulaire label{
+    color: #fcf6f6;
+}
