@@ -53,3 +53,38 @@ function filterSelection(category) {
         }
     });
 }
+/*================ANIMATION=============*/
+const counter = document.querySelectorAll(".counter");
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const counter = entry.target;
+            const target = +counter.dataset.target;
+            let count = 0;
+            const update = () => {
+                const increment = target / 100;
+                if (count < target) {
+                    count += increment;
+                    counter.innerText = Math.ceil(count);
+                    requestAnimationFrame(update);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            update();
+            observer.unobserve(counter);
+        }
+    });
+});
+counter.forEach(counter => observer.observe(counter));
+const section = document.querySelectorAll(".fade-in");
+const fadeObserver = new IntersectionObserver((entries) =>{
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+});
+sections.forEach(section => {
+    fadeObserver.observe (section);
+});

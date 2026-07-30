@@ -848,3 +848,13 @@ body.dark .formulaire label{
     width: 300px;
     transition: 0.3s;
 }
+/*==============Animation===============*/
+.fade-in{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+.fade-in.show{
+    opacity: 1;
+    transform: translateY(0);
+}
