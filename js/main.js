@@ -41,3 +41,15 @@ topBtn.addEventListener("click",()=>{
         behavior:"smooth"
     });
 });
+/*===========filtrage===========*/
+function filterSelection(category) {
+    const cards = document.querySelectorAll(".speaker-card");
+    cards.forEach(card => {
+        if(category === "all" || card.classList.contains(category)){
+            card.style.display = "block";
+        }
+        else{
+            card.style.display = "none";
+        }
+    });
+}

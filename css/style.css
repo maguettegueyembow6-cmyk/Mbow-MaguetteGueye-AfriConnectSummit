@@ -702,7 +702,7 @@ body.dark{
     color: white;
 }
 body.dark header{
-    background: #000;
+    background: #1c04fa;
 }
 body.dark.card{
     background: #222;
@@ -817,4 +817,34 @@ body.dark textarea::placeholder{
 }
 body.dark .formulaire label{
     color: #fcf6f6;
+}
+/*===========BOUTONS DE FILTRAGE==========*/
+.filter{
+    text-align: center;
+    margin: 30px 0;
+}
+.filter button{
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.filter button:hover{
+    background: #ffc107;
+    color: black;
+}
+/*===========CARTES DES INTERVENANTS============*/
+.speaker-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.speaker-card{
+    width: 300px;
+    transition: 0.3s;
 }
