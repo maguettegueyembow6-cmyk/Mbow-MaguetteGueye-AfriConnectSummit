@@ -85,6 +85,65 @@ const fadeObserver = new IntersectionObserver((entries) =>{
         }
     });
 });
-sections.forEach(section => {
+section.forEach(section => {
     fadeObserver.observe (section);
 });
+/*===================PROGRAMME==============*/
+function showDay(dayId) {
+    //Récupérer tous les contenus
+    const contents = document.querySelectorAll(".tab-content");
+    //cacher tous les jours
+    contents.forEach(content =>{
+        content.style.display = "none"
+    });
+    //Afficher le jour séléctionné
+    const selectedDay = document.getElementById(dayId);
+    if (selectedDay){
+        selectedDay.style.display = "block";
+    }
+    //Gérer le bouton actif
+    const buttons = document.querySelectorAll(".tab-btn");
+    buttons.forEach(button =>{
+        button.classList.remove("active");
+    });
+    //trouver le bouton correspondant
+    buttons.forEach(button => {
+        if (button.getAttribute("onclick")=== `showDay('${dayId}')`) {
+            button.classList.add("active");
+        }
+    });
+}
+//=========================
+//COMPTE A REBOURS
+//=========================
+const dateEvenement = new Date ("2026-10-08T09:00:00").getTime();
+function countdown(){
+    const maintenant = new Date().getTime();
+    const difference = dateEvenement - maintenant;
+    if(difference <= 0) {
+        document.getElementById("days").textContent = "00";
+        document.getElementById("hours").textContent = "00";
+        document.getElementById("minute").textContent = "00";
+        document.getElementById("seconds").textContent = "00";
+        return;
+    }
+    const jours = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const heures = Math.floor(
+        (difference / (1000 * 60 * 60)) % 24
+    );
+    const minute = Math.floor(
+        (difference / (1000 * 60)) % 60
+    );
+    const secondes = Math.floor(
+        (difference / 1000) % 60
+    );
+    document.getElementById("days").textContent = jours;
+    document.getElementById("hours").textContent = heures
+        .toString().padStart(2, "0");
+    document.getElementById("minute").textContent = minute
+        .toString().padStart(2,"0");
+    document.getElementById("seconds").textContent = secondes
+        .toString().padStart(2, "0");        
+}
+countdown();
+setInterval(countdown, 1000);
